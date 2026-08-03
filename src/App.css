@@ -1,0 +1,250 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f9f9f9;
+  color: #111111;
+  line-height: 1.5;
+}
+
+.pop-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1. Header */
+.pop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #111111;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pop-logo {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.pop-logo span {
+  color: #FFCC00;
+}
+
+.pop-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.pop-nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.pop-nav-link:hover {
+  color: #FFCC00;
+}
+
+.pop-cart-badge {
+  background-color: #FF007F;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* 2. Hero Banner */
+.pop-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #FFCC00;
+  color: #111111;
+  border-bottom: 4px solid #111111;
+}
+
+.pop-hero-title {
+  font-size: 38px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.pop-hero-subtitle {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto 24px auto;
+  color: #222222;
+}
+
+.pop-hero-btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pop-hero-btn:hover {
+  background-color: #FF007F;
+  transform: translateY(-2px);
+}
+
+/* 3. Vitrine & Grid */
+.pop-section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.pop-section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.pop-section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #FF007F;
+  margin: 8px auto 0 auto;
+}
+
+.pop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Força 3 cards por linha */
+  gap: 28px;
+}
+
+
+/* 4. Product Card */
+.pop-card {
+  position: relative;
+  border: 2px solid #111111;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 4px 4px 0px #111111;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px 0px #111111;
+}
+
+.pop-card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #E50914;
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.pop-card-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-bottom: 2px solid #111111;
+}
+
+.pop-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pop-card-category {
+  font-size: 11px;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.pop-card-title {
+  font-size: 18px;
+  color: #111111;
+}
+
+.pop-card-price-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.pop-card-old-price {
+  text-decoration: line-through;
+  color: #888888;
+  font-size: 14px;
+}
+
+.pop-card-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF007F;
+}
+
+.pop-card-btn {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.pop-card-btn:hover {
+  background-color: #00E5FF;
+  color: #111111;
+}
+
+/* 5. Footer */
+.pop-footer {
+  background-color: #111111;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 28px 20px;
+  margin-top: 40px;
+  border-top: 4px solid #FF007F;
+}
+
+.pop-footer-sub {
+  font-size: 13px;
+  margin-top: 6px;
+  color: #666666;
+}

@@ -1,9 +1,15 @@
 import React from 'react';
 
-export function ProductCard({ title, category, price, originalPrice, imageUrl, badge, onAddToCart }) {
+export function ProductCard({ title, category, price, originalPrice, imageUrl, badge, destaque, onAddToCart }) {
   return (
-    <div className="pop-card">
+    /* Se a prop destaque for verdadeira, adiciona a classe CSS 'pop-card-destaque' */
+    <div className={`pop-card ${destaque ? 'pop-card-destaque' : ''}`}>
+      
+      {/* Exibe o selo especial de destaque se a prop for verdadeira */}
+      {destaque && <span className="pop-tag-destaque">⭐ Destaque</span>}
+      
       {badge && <span className="pop-card-badge">{badge}</span>}
+      
       <img src={imageUrl} alt={title} className="pop-card-img" />
       <div className="pop-card-body">
         <span className="pop-card-category">{category}</span>

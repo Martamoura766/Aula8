@@ -248,3 +248,24 @@ body {
   margin-top: 6px;
   color: #666666;
 }
+/* Estilo condicional ativado quando a prop destaque === true */
+.pop-card-destaque {
+  border: 3px solid #FF007F; /* Borda rosa neon em destaque */
+  box-shadow: 6px 6px 0px #FFCC00; /* Sombra amarela Pop Art */
+  transform: scale(1.02); /* Fica levemente maior */
+}
+
+/* Selo exclusivo para itens em destaque */
+.pop-tag-destaque {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #FFCC00;
+  color: #111111;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+  z-index: 2;
+}

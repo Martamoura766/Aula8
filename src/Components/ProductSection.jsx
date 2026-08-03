@@ -15,6 +15,7 @@ export function ProductSection({ title, products, onAddToCart }) {
             originalPrice={product.originalPrice}
             imageUrl={product.imageUrl}
             badge={product.badge}
+            destaque={product.destaque} // <--- Repassando a prop destaque
             onAddToCart={onAddToCart}
           />
         ))}

@@ -6,7 +6,8 @@ export const products = [
     price: 89.90,
     originalPrice: 109.90,
     imageUrl: 'https://http2.mlstatic.com/D_NQ_NP_986285-CBT103436253807_012026-O-camiseta-de-arte-classica-leonardo-da-vinci-art-confortavel.webphttps://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&auto=format&fit=crop',
-    badge: 'Mais Vendida'
+    badge: 'Mais Vendida',
+    destaque: true // <--- NOVA PROP: Marcado como destaque!
   },
   {
     id: 2,
@@ -14,7 +15,8 @@ export const products = [
     category: 'Quadrinhos',
     price: 79.90,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIj8Uo-_p_QOw4IXjYkwALFAIHdDbRVkGl8UqTSXfNhg&s=10',
-    badge: 'Novo'
+    badge: 'Novo',
+    destaque: false
   },
   {
     id: 3,
@@ -23,6 +25,7 @@ export const products = [
     price: 94.90,
     originalPrice: 119.90,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ81lPTHdbzYIjmZu30ptBG_VzCem0kxr09-ASmId6WIA&s=10',
+    destaque: true // <--- NOVA PROP: Marcado como destaque!
   },
   {
     id: 4,
@@ -30,7 +33,8 @@ export const products = [
     category: 'Música',
     price: 84.90,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYizspORKmhqLZ0LGUEG7kR-AUL6eUWz7L7V-m5cuDMQ&s',
-    badge: 'Edição Limitada'
+    badge: 'Edição Limitada',
+    destaque: false
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const products = [
     category: 'Minimalista',
     price: 79.90,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb9jJRYIFuMtZ1Wfb07JA35V6XsDX2tesI2ch8KRy5mw&s',
+    destaque: false
   },
   {
     id: 6,
@@ -46,5 +51,6 @@ export const products = [
     price: 89.90,
     originalPrice: 99.90,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsNppmv8Lo9QgXrb-jODjcCwbO7TeNR7_zHQOSxbgqKg&s',
+    destaque: false
   }
 ];

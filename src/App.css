@@ -83,7 +83,7 @@ body {
 
 .pop-hero-subtitle {
   font-size: 18px;
-  max-width: 650px;
+  max:width 1200px;
   margin: 0 auto 24px auto;
   color: #222222;
 }

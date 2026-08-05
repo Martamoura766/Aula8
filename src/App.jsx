@@ -6,6 +6,7 @@ import { ProductSection } from './Components/ProductSection';
 import { Footer } from './Components/Footer';
 import { products } from './data/products';
 
+
 export default function App() {
   const [cartCount, setCartCount] = useState(0);
 
